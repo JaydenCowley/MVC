@@ -19,10 +19,11 @@ router.get('/login', (req, res) => {
   // Otherwise, render the 'login' template
   res.render('login');
 });
+
 router.get('/dashboard', (req, res) => {
   
   res.render('dashboard', 
-  //{loggedIn: req.session.loggedIn}
+  {loggedIn: req.session.loggedIn}
   );
 })
 
