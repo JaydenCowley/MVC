@@ -1,12 +1,12 @@
 const User = require('./Users'); 
-const Workout = require('./Workout'); 
+// const thought = require('./thought'); 
 
-User.hasMany(Workout, {
-    foreignKey: 'userid',
-}); 
+// User.hasMany(thought, {
+//     foreignKey: 'userid',
+// }); 
 
-Workout.belongsTo(User, {
-    foreignKey: 'userid', 
-});
+// thought.belongsTo(User, {
+//     foreignKey: 'userid', 
+// });
 
 module.exports = { User };

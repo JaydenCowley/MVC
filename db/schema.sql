@@ -10,6 +10,7 @@ CREATE TABLE thought (
     id INTEGER AUTO_INCREMENT PRIMARY KEY,
     userid INTEGER NOT NULL,
     date_ VARCHAR(30) NOT NULL, 
+    body VARCHAR(300),
     createdAt datetime,
     updatedAt datetime
 
