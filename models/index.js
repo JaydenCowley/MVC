@@ -9,4 +9,4 @@ Workout.belongsTo(User, {
     foreignKey: 'userid', 
 });
 
-module.exports = { User, Workout};
+module.exports = { User };
