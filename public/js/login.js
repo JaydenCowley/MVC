@@ -16,7 +16,7 @@ async function loginFormHandler() {
       });
   
       if (response.ok) {
-        document.location.replace('/workoutHistory');
+        document.location.replace('/dashboard');
       } else {
         alert(response.statusText);
       }
