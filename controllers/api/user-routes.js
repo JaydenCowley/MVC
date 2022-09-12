@@ -75,8 +75,13 @@ router.post('/logout', (req, res) => {
     res.status(400).end();
   }
 });
+// Get all thoughts
+router.get('/addThought', (req, res) => {
+  res.render('addThought')
+})
+
 // Route for posting thoughts
-router.post('/thought', (req, res) => {
+router.post('/addThought', (req, res) => {
   const dbThoughts = Thought.create({
     thought: req.body.thought
   })

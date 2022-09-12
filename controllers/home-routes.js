@@ -19,9 +19,6 @@ router.get('/login', (req, res) => {
   // Otherwise, render the 'login' template
   res.render('login');
 });
-router.get('/addThought', (req, res) => {
-  res.render('addThought')
-})
 
 router.get('/dashboard', (req, res) => {
   
