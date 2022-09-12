@@ -75,7 +75,13 @@ router.post('/logout', (req, res) => {
     res.status(400).end();
   }
 });
-
+// Route for posting thoughts
+router.post('/thought', (req, res) => {
+  const dbThoughts = Thought.create({
+    thought: req.body.thought
+  })
+  }
+);
 
 
 module.exports = router;
